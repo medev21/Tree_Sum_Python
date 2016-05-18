@@ -6,7 +6,7 @@ name = "triangle.txt"
 with open(name) as f:
     array =[]
     for line in f:
-
-        array.append(line.split())
+        results = map(int, line.split())
+        array.append(results)
 
 print(array[99])
