@@ -17,9 +17,10 @@ def tree():
     with open(name) as f:
         tree_array =[]
         for line in f:
+            results = map(int, line.split())
+            tree_array.append(results)
 
-            tree_array.append(line.split())
-
+    # print(tree_array[99])
     sum = 0
 
     for index, val in reversed(list(enumerate(tree_array))):
